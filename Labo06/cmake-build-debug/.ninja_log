@@ -1,0 +1,18 @@
+# ninja log v5
+24	977	6738348759083519	CMakeFiles/LaboTesting.dir/ej1/esPrimo.cpp.obj	a28f62bd88840cec
+1	2794	6738348776856030	CMakeFiles/LaboTesting.dir/main.cpp.obj	db5a41bb7dae71be
+34	8494	6738348834398090	lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	5cad5f9d43794c4
+1672	3690	6738369201136179	LaboTesting.exe	d74d9b1161887406
+38	2800	6738348776965732	lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	f77efc5fe600baa5
+29	2822	6738348777394593	CMakeFiles/LaboTesting.dir/ej1/Test/esPrimoTest.cpp.obj	17da78113adf6bd9
+8496	9930	6738348848845114	lib/googletest-master/googlemock/gtest/libgtestd.a	501f2292636f98c9
+9930	10028	6738348849839929	lib/googletest-master/googlemock/gtest/libgtest_maind.a	a9c10d86a29f0559
+7	380	6738369168115707	CMakeFiles/LaboTesting.dir/ej1/puntaje.cpp.obj	6b78b0edf940874e
+31	1672	6738369181015297	CMakeFiles/LaboTesting.dir/ej1/Test/puntajeTEST.cpp.obj	d396670d1bcec836
+4	398	6738385388346583	CMakeFiles/LaboTesting.dir/ej2/llenarTaxis.cpp.obj	4acbc9cb2a9d7543
+23	1644	6738385400799387	CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.obj	47abce26a1bf2a6e
+1645	3675	6738385421044983	LaboTesting.exe	88b9e2a70f6043d9
+4	1574	6738388003890878	CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.obj	47abce26a1bf2a6e
+1574	3599	6738388024065489	LaboTesting.exe	88b9e2a70f6043d9
+4	1546	6738389578856740	CMakeFiles/LaboTesting.dir/ej2/Test/llenarTaxisTEST.cpp.obj	47abce26a1bf2a6e
+1546	3675	6738389600076747	LaboTesting.exe	88b9e2a70f6043d9
