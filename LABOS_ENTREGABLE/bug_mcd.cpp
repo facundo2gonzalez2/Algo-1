@@ -25,19 +25,18 @@ int minimo(int x, int y){
 }
 
 int maximoComunDivisor(int x, int y){
-    int a = maximo(x,y);
-    int b = minimo(x,y);
-    int resto;
-    if(x==0 && y==0){
-        resto=0;
-    } else{
-        while(b!=0){
-            resto = b;
-            b = a % b;
-            a = resto;
-        }
-    }
-    return resto;
+  int a = maximo(x,y);
+  int b = minimo(x,y);
+  int resto;
+  while((b!=0) || (b!=1)){
+    resto = a%b;
+    b = a;
+    a = resto;
+  }
+  if(a==0)
+    return a;
+  else
+    return 1;
  }
 
 int main() {
