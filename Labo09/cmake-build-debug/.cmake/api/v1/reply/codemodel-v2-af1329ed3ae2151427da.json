@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/Escritorio/C++/Ejercicios/cmake-build-debug",
-		"source" : "E:/Escritorio/C++/Ejercicios"
+		"build" : "E:/Escritorio/Algo-1/Labo09/cmake-build-debug",
+		"source" : "E:/Escritorio/Algo-1/Labo09"
 	},
 	"version" : 
 	{
