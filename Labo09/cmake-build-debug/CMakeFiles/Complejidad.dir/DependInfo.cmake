@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "E:/Escritorio/Algo-1/Labo09/ejercicios.cpp" "CMakeFiles/Complejidad.dir/ejercicios.cpp.obj" "gcc" "CMakeFiles/Complejidad.dir/ejercicios.cpp.obj.d"
-  "E:/Escritorio/Algo-1/Labo09/main.cpp" "CMakeFiles/Complejidad.dir/main.cpp.obj" "gcc" "CMakeFiles/Complejidad.dir/main.cpp.obj.d"
+  "C:/Users/f_acu/Desktop/Algo-1/Labo09/ejercicios.cpp" "CMakeFiles/Complejidad.dir/ejercicios.cpp.obj" "gcc" "CMakeFiles/Complejidad.dir/ejercicios.cpp.obj.d"
+  "C:/Users/f_acu/Desktop/Algo-1/Labo09/main.cpp" "CMakeFiles/Complejidad.dir/main.cpp.obj" "gcc" "CMakeFiles/Complejidad.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

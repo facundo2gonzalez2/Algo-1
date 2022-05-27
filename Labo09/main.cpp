@@ -3,14 +3,14 @@
 using namespace std;
 
 int main() {
-    int n=100;
-    int hasta = 156;
-    int paso = 5;
+    int n=0;
+    int hasta = 1000;
+    int paso = 10;
     ofstream fout;
     fout.open("datos.csv");
     fout << "n\t" << "tiempo" <<endl;
     while (n<hasta){
-        vector<int> v = construir_vector(n , "azar");
+        vector<int> v = construir_vector(n , "asc");
 
         double t0=clock();
         bool busqueda = algunSubconjSuma(v, n/2);

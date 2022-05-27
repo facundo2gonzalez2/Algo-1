@@ -1,6 +1,6 @@
 CMakeFiles/Complejidad.dir/main.cpp.obj: \
- E:\Escritorio\Algo-1\Labo09\main.cpp \
- E:\Escritorio\Algo-1\Labo09\ejercicios.h \
+ C:\Users\f_acu\Desktop\Algo-1\Labo09\main.cpp \
+ C:\Users\f_acu\Desktop\Algo-1\Labo09\ejercicios.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iostream \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
