@@ -1,6 +1,7 @@
 #include "ejercicios.h"
 
 #include <utility>
+#include <algorithm>
 
 /* Para compilar */ 
 
@@ -97,7 +98,79 @@ int cantidadDeFelicitaciones(vector<string> v){
     return res;
 }
 
-int middleOut(string s, string t){
+bool tienenMismasLetras(string s, string t){
+    bool res = true;
+    int i=0;
+    while (i<s.size()){
+        int j=0;
+        while (j<t.size()){
+            if (s[i]!=s[j]){
 
-    return 0;
+            }
+
+        }
+    }
+    return ((s.size()==t.size()) & res);
 }
+void ordenar(vector<int>& v) {
+    for(int i=0;i<v.size();i++){
+        for(int j=0;j<v.size();j++){
+            if(v[i]<=v[j]){
+                int aux = v[j];
+                v[j]=v[i];
+                v[i]=aux;
+            }
+        }
+    }
+}
+int contadorMovimientosDeSaT(vector<int> s, vector<int>t){
+    int contador=0;
+    for(int i=0;i<s.size();i++){
+        for(int j=0;j<s.size();j++){
+            if(s[i]<=s[j]){
+                int aux = s[j];
+                s[j]=s[i];
+                s[i]=aux;
+                contador++;
+            }
+        }
+    }
+    return contador;
+}
+
+
+int middleOut(string s, string t){
+    int movimientos=-1;
+    vector<int> posicionesDeT(t.size());
+    vector<int> posicionesDeS(s.size());
+    int k=0;
+    while (k<t.size()){
+        posicionesDeT[k]=k;
+        k++;
+    }
+    if (s.size()!=t.size()){
+        return movimientos;
+    }
+ //   if (!tienenMismasLetras(s,t)){
+ //       return movimientos;
+ //   }
+    int i=0;
+    while (i<s.size()){
+        int j=0;
+        while (j<t.size()){
+            if (s[i]==t[j]){
+                posicionesDeS[i]=j;
+            }
+            j++;
+        }
+        i++;
+    }
+    movimientos = contadorMovimientosDeSaT(posicionesDeS,posicionesDeT);
+    return movimientos;
+}
+
+
+
+
+
+
