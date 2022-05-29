@@ -1,0 +1,3 @@
+C:/Users/f_acu/Desktop/Algo-1/Practica8/cmake-build-debug/CMakeFiles/Practica8.dir
+C:/Users/f_acu/Desktop/Algo-1/Practica8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/f_acu/Desktop/Algo-1/Practica8/cmake-build-debug/CMakeFiles/rebuild_cache.dir
