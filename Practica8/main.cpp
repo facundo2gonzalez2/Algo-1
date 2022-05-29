@@ -4,7 +4,7 @@ using namespace std;
 
 
 int main() {
-    vector<int> v(1000000,10);
+    vector<int> v= construir_vector(100000,"asc");
     double t0 = clock();
     vector<int> nuevovector = hacerAlgo(v);
     double t1 = clock();
