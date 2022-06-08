@@ -1,0 +1,3 @@
+E:/Escritorio/Algo-1/Labo11/template-alumnos/anagramas/src/cmake-build-debug/CMakeFiles/anagramas.dir
+E:/Escritorio/Algo-1/Labo11/template-alumnos/anagramas/src/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/Escritorio/Algo-1/Labo11/template-alumnos/anagramas/src/cmake-build-debug/CMakeFiles/rebuild_cache.dir

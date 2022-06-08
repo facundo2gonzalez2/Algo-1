@@ -1,0 +1,23 @@
+# ninja log v5
+0	1050	6763975814398554	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+1068	1274	6763975816590781	../bin-package.exe	b94e76aff2d284fa
+4	976	6763978196854475	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+977	1171	6763978198771871	../bin-package.exe	b94e76aff2d284fa
+3	916	6763978304264903	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+916	1083	6763978305900822	../bin-package.exe	b94e76aff2d284fa
+4	1259	6763982272479086	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+1259	1428	6763982274126863	../bin-package.exe	b94e76aff2d284fa
+3	959	6763982396627115	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+959	1137	6763982398362468	../bin-package.exe	b94e76aff2d284fa
+3	865	6763982476899715	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+865	1055	6763982478774698	../bin-package.exe	b94e76aff2d284fa
+3	856	6763982630696450	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+856	1064	6763982632740693	../bin-package.exe	b94e76aff2d284fa
+5	877	6763984623677413	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+877	1043	6763984625316086	../bin-package.exe	b94e76aff2d284fa
+3	981	6763985198047900	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+981	1202	6763985200187280	../bin-package.exe	b94e76aff2d284fa
+3	894	6763988641132433	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+894	1060	6763988642761427	../bin-package.exe	b94e76aff2d284fa
+4	904	6763989181983699	CMakeFiles/bin-package.dir/main.cpp.obj	2d9c3110ba00e04f
+904	1073	6763989183638163	../bin-package.exe	b94e76aff2d284fa

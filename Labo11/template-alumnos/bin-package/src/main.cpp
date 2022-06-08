@@ -5,19 +5,41 @@
 #include <set>
 
 using namespace std;
-
-void insertionSort(vector< int > &arr){
-	//Rellenar insertion
-
+void swap(vector<int> &v,int i, int j){
+    int aux = v[i];// O(1)
+    v[i] = v[j];// O(1)
+    v[j] = aux;// O(1)
 }
-
+void insert(vector<int> &v, int i){
+    for(int j = i; j > 0 && v[j] < v[j-1]; j--){
+        swap(v, j, j-1);// O(1)
+    }
+}
+void insertionSort(vector< int > &arr){
+    for(int i = 0; i<arr.size(); i++){// O(n*n)
+        insert(arr, i);// O(n)
+    }
+}
+int findMinPos(vector<int> &s, int d, int h){
+    int min = d;
+    for (int i = d+1; i <h ; ++i) {
+        if (s[i]<s[min]){
+            min=i;
+        }
+    }
+    return min;
+}
 void selectionSort(vector< int > &arr){
-	//Rellenar selection
+    for(int i=0; i<arr.size();i++){
+        int minPos = findMinPos(arr,i,arr.size());
+        swap(arr,i,minPos);
+    }
 }
 
 
 void ordenar(vector<int> &items){
-	//Poner aca una implementación de ordenar
+    insertionSort(items);
+    //selectionSort(items);
 }
 
 
@@ -57,11 +79,17 @@ int main(){
 	int cant1 = bestFit(W, items);
 	cout << "Con la idea bestFit, se consigue una asignacion con " << cant1 << " contenedores" << endl;
 
+
+
+    double t0=clock();
 	//Se ordenan los items
 	ordenar(items);
 	//Se corre best-fit-decreasing
 	int cant2 = bestFit(W, items);
+    double t1=clock();
+    double tiempo = (double (t1-t0) / CLOCKS_PER_SEC);
 	cout << "Con la idea bestFitDecreasing, se consigue una asignacion con " << cant2 << " contenedores" << endl;
+    cout << "El tiempo que tarda en ordenar y realizar bestFitDecreasing es " << tiempo << "segundos" << endl;
 
 	return 0;
 }
