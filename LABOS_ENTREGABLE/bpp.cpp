@@ -5,31 +5,56 @@
 #include <set>
 
 using namespace std;
+
 void swap(vector<int> &v,int i, int j){
-    int aux = v[i];// O(1)
-    v[i] = v[j];// O(1)
-    v[j] = aux;// O(1)
+    int aux = v[i];
+    v[i] = v[j];
+    v[j] = aux;
 }
+
+
 void insert(vector<int> &v, int i){
     for(int j = i; j > 0 && v[j] > v[j-1]; j--){
-        swap(v, j, j-1);// O(1)
+        swap(v, j, j-1);
     }
 }
 void insertionSort(vector< int > &arr){
-    for(int i = 0; i<arr.size(); i++){// O(n*n)
-        insert(arr, i);// O(n)
+    for(int i = 0; i<arr.size(); i++){
+        insert(arr, i);
     }
 }
+
+
+/*
+int findMinPos(vector<int> &s, int d, int h){
+    int min = d;
+    for (int i = d+1; i <h ; ++i) {
+        if (s[i]>s[min]){
+            min=i;
+        }
+    }
+    return min;
+}
+void selectionSort(vector< int > &arr){
+    for(int i=0; i<arr.size();i++){
+        int minPos = findMinPos(arr,i,arr.size());
+        swap(arr,i,minPos);
+    }
+}
+*/
+
+
 void ordenar(vector<int> &items){
-    insertionSort(items);
-    // Poner aca una implementación de ordenar
+    insertionSort(items);   //con insertion fallan 2 test por tiempo
+    //selectionSort(items); //con selection fallan 4 test por tiempo
     
+    
+    // Poner aca una implementación de ordenar
     // Atencion: no todas las implementaciones son
     // suficientemente rápidas para resolver en el
     // tiempo máximo permitido de la prueba automatizada.
     // Elegir entre las implementaciones vistas en
     // clase.
-    //
     // Observación:
     // No vale usar std::sort()
 }
