@@ -5,50 +5,40 @@
 #include <set>
 
 using namespace std;
-
-void swap(vector<int> &v,int i, int j){
-    int aux = v[i];
-    v[i] = v[j];
-    v[j] = aux;
-}
-
-
-void insert(vector<int> &v, int i){
-    for(int j = i; j > 0 && v[j] > v[j-1]; j--){
-        swap(v, j, j-1);
-    }
-}
-void insertionSort(vector< int > &arr){
-    for(int i = 0; i<arr.size(); i++){
-        insert(arr, i);
-    }
-}
-
-
-/*
-int findMinPos(vector<int> &s, int d, int h){
-    int min = d;
-    for (int i = d+1; i <h ; ++i) {
-        if (s[i]>s[min]){
-            min=i;
+int max(vector<int> lista){
+    int res=lista[0];
+    for(int i=0;i<lista.size();i++){
+        if(lista[i]>res){
+            res=lista[i];
         }
     }
-    return min;
+    return res;
 }
-void selectionSort(vector< int > &arr){
-    for(int i=0; i<arr.size();i++){
-        int minPos = findMinPos(arr,i,arr.size());
-        swap(arr,i,minPos);
+vector<int> contar (vector <int > & lista ) {
+    int cota = max(lista)+1 ;
+    vector<int> conteo(cota, 0);
+    for (int i = 0; i < lista.size(); i++) {
+        conteo[lista[i]]++;
+    }
+    return conteo;
+}
+void reconstruir(vector <int> &lista , vector <int> conteo) {
+    int indice_conteo = conteo.size()-1;
+    for (int i = 0; i < lista.size(); i++) {
+        while (conteo[indice_conteo] == 0) {
+            indice_conteo--;
+        }
+        lista[i] = indice_conteo;
+        conteo[indice_conteo]--;
     }
 }
-*/
-
-
+vector<int> countingSort(vector<int> &lista) {
+    vector<int> conteo = contar(lista);
+    reconstruir(lista,conteo);
+    return lista;
+}
 void ordenar(vector<int> &items){
-    insertionSort(items);   //con insertion fallan 2 test por tiempo
-    //selectionSort(items); //con selection fallan 4 test por tiempo
-    
-    
+    countingSort(items);
     // Poner aca una implementación de ordenar
     // Atencion: no todas las implementaciones son
     // suficientemente rápidas para resolver en el
@@ -58,7 +48,6 @@ void ordenar(vector<int> &items){
     // Observación:
     // No vale usar std::sort()
 }
-
 
 int bestFit(int W, vector<int> &items){
     multiset<int> restos;
